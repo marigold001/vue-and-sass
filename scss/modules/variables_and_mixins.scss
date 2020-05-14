@@ -1,0 +1,7 @@
+$margin_reset: 0;
+@mixin flex_container_column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}

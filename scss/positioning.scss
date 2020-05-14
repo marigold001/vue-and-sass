@@ -1,0 +1,33 @@
+@use 'modules/forward';
+body {
+    margin: forward.$margin_reset;
+}
+
+ul {
+    @include forward.flex_container_column;
+    li {
+        text-align: right;
+        margin-left: -153px;
+        a {
+        display: inline-block;
+        width: 150px;
+        transition: .3s;
+        }
+        .one:hover {
+        margin-left: 70px;
+        }
+        .two:hover {
+        @extend .one;
+        }
+        .three:hover {
+        margin-left: 90px;
+        }
+        .four:hover {
+        @extend .one;
+        }
+        .five:hover {
+        @extend .three;
+        }
+
+    }
+}

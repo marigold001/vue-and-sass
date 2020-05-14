@@ -1,0 +1,23 @@
+$brown_navigation_background: #A75813;
+ul {
+    li.border_up {
+        border-radius: 0px 10px 0px 0px;
+    }
+    li.border_down {
+        border-radius: 0px 0px 10px 0px;
+    }
+    li {
+        list-style-type: none;
+        background-color: $brown_navigation_background;
+        a {
+        text-decoration: none;
+        color: #fff;
+        }
+        span {
+        font-family: Arial, Helvetica, sans-serif;
+        }
+        i {
+        padding: 10px;
+        }
+    }
+}
